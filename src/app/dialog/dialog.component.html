@@ -1,0 +1,59 @@
+<form *ngIf="userForm" [formGroup]="userForm" (ngSubmit)="postProduct()">
+  <div class="form-group mb-3">
+    <label for="exampleInputEmail1">Restaurant ID</label>
+    <input type="number" class="form-control" formControlName="restaurants_ID" id="exampleInputId"
+      aria-describedby="emailHelp" placeholder="Enter Res ID here">
+    <small class="text-danger"
+      *ngIf="userForm.get('restaurants_ID')?.invalid && userForm.get('restaurants_ID')?.touched">Restaurants ID is
+      required</small>
+  </div>
+
+  <div class="form-group mb-3">
+    <label for="exampleInputPassword1">Name</label>
+    <input type="name" class="form-control" formControlName="name" id="exampleInputName" placeholder="Enter Name">
+    <small class="text-danger" *ngIf="userForm.get('name')?.invalid && userForm.get('name')?.touched">Name is
+      required</small>
+  </div>
+
+  <div class="form-group mb-3">
+    <label for="exampleInputEmail1">Email</label>
+    <input type="email" class="form-control" formControlName="email" id="exampleInputEmail1"
+      placeholder="Enter Your Email">
+    <small class="text-danger" *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.touched">Email is
+      required</small>
+  </div>
+
+  <div class="form-group mb-3">
+    <label for="exampleInputEmail1">Mobile no</label>
+    <input type="phone number" class="form-control" formControlName="phone" id="exampleInputEmail1"
+      placeholder="Enter your Number">
+    <small class="text-danger" *ngIf="userForm.get('phone')?.invalid && userForm.get('phone')?.touched">Phone number is
+      required</small>
+  </div>
+
+  <div class="form-group mb-3">
+    <label for="exampleInputEmail1">Address</label>
+    <input type="address" class="form-control" formControlName="address" id="exampleInputEmail1" placeholder="Address">
+    <small class="text-danger" *ngIf="userForm.get('address')?.invalid && userForm.get('address')?.touched">Address is
+      required</small>
+  </div>
+
+  <div class="form-group mb-3">
+    <label for="exampleInputEmail1">Service</label>
+    <input type="Service" class="form-control" formControlName="service" id="exampleInputEmail1"
+      placeholder="Service here">
+    <small class="text-danger" *ngIf="userForm.get('service')?.invalid && userForm.get('service')?.touched">Service is
+      required</small>
+  </div>
+
+  <div class="form-group form-check mb-3">
+    <input type="checkbox" class="form-check-input" formControlName="checkbox" id="exampleCheck1">
+
+    <label class="form-check-label" for="exampleCheck1">Check me out</label><br>
+    <small class="text-danger" *ngIf="userForm.get('checkbox')?.invalid && userForm.get('checkbox')?.touched">Tick this
+      box</small>
+  </div>
+
+  <button type="button" class="btn btn-danger" mat-dialog-close>Close</button>&nbsp;
+  <button type="submit" class="btn btn-primary" [disabled]="userForm.invalid">ADD DETAILS</button>
+</form>

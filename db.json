@@ -1,0 +1,54 @@
+{
+  "UserDetails": [
+    {
+      "restaurants_ID": 1,
+      "name": "Nasre Alam",
+      "email": "nasrealam407@gmail.com",
+      "phone": "9006978818",
+      "address": "Sangam Vihar",
+      "service": "tea & coffee",
+      "checkbox": true,
+      "id": 1
+    },
+    {
+      "restaurants_ID": 2,
+      "name": "Rehan Raza",
+      "email": "rraza9132@gmail.com",
+      "phone": "8090670632",
+      "address": "Sangam vihar",
+      "service": "Chaddi mombbati shop",
+      "checkbox": true,
+      "id": 2
+    },
+    {
+      "restaurants_ID": 3,
+      "name": "Nitish",
+      "email": "nitishkumar425@gmail.com",
+      "phone": "9006978818",
+      "address": "Sangam vihar",
+      "service": "fish shop",
+      "checkbox": true,
+      "id": 3
+    },
+    {
+      "restaurants_ID": 4,
+      "name": "Asif",
+      "email": "asif9135@gmail.com",
+      "phone": "9006978818",
+      "address": "Sangam",
+      "service": "tea & coffee",
+      "checkbox": true,
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
